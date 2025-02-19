@@ -40,7 +40,7 @@ export default function DebateInterface() {
 
   const loadConversationHistory = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8000/conversation_history/${id}`);
+      const response = await fetch(`https://ai-debater-u58n.onrender.com/conversation_history/${id}`);
       if (!response.ok) {
         if (response.status === 404) {
           setTranscript([{ speaker: "System", message: "No conversation history found." }]);
