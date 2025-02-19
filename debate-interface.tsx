@@ -109,7 +109,7 @@ export default function DebateInterface() {
 
   async function sendAudioToBackend(audioBase64) {
     try {
-      const response = await fetch('http://localhost:8000/debate-turn/', {
+      const response = await fetch('https://ai-debater-u58n.onrender.com/debate-turn/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
