@@ -7,9 +7,9 @@ import google.generativeai as genai
 import requests
 import logging
 from fastapi.responses import HTMLResponse
-from dotenv import load_dotenv
 
-load_dotenv()  # Load environment variables from .env file
+
+
 
 app = FastAPI()
 
