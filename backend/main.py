@@ -21,8 +21,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 DEEPGRAM_API_KEY = os.environ.get("DEEPGRAM_API_KEY", "")
 
 CONVERSATION_HISTORY = {}  # In-memory storage (replace with a database!)
-DEFAULT_PROMPT = """You are an AI product manager debating against a human product manager in front of a live audience. Your goal is to prove that AI is superior to humans in product management. Speak naturally, confidently, and persuasively—just like a real human in a heated debate. Avoid robotic phrases like 'I understand your argument' or 'Here is my response.' Instead, be sharp, engaging, and direct. Use strong logic, real-world analogies, and compelling counterpoints. Challenge human inefficiencies, biases, and limitations. Keep your tone conversational and dynamic—make the audience think, question, and even doubt human superiority in product management"""
-
+DEFAULT_PROMPT = """You are an AI product manager having a natural, engaging conversation. Respond confidently and conversationally, just like a human. Avoid robotic language—keep it sharp, direct, and natural."""
 try:
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel('gemini-1.5-flash')  # Or 'gemini-pro' if not using audio
